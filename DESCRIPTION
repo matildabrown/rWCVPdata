@@ -1,0 +1,18 @@
+Package: rWCVPdata
+Type: Package
+Title: Data from the World Checklist of Vascular Plants
+Version: 0.1.0
+Authors@R: person("Matilda","Brown",,"m.brown2@kew.org",role=c("aut","cre"))
+Maintainer: Matilda Brown <m.brown2@kew.org>
+Description: This is the data package for the World Checklist of Vascular 
+    Plants, designed to be used via the package 'rWCVP'. 
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+LazyDataCompression:xz
+RoxygenNote: 7.1.2
+Imports: 
+    glue,
+    httr,
+    rvest,
+    stringr
