@@ -124,7 +124,7 @@
 #'
 #' @source  \url{https://github.com/tdwg/wgsrpd/tree/master/level3}
 
-"wgsprd3"
+"wgsrpd3"
 
 #' Aggregated WGSRPD3 polygons, for mapping
 #'
@@ -153,7 +153,7 @@
 #'
 #' @source  \url{https://github.com/tdwg/wgsrpd/tree/master/level3}
 
-"wgsprd3_pacific"
+"wgsrpd3_pacific"
 
 #' Aggregated WGSRPD3 polygons centered on 180 longitude, for mapping
 #'
