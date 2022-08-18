@@ -5,30 +5,18 @@
 \alias{wcvp_distributions}
 \title{The World Checklist of Vascular Plants: distributions}
 \format{
-A data frame with 1,937,645 rows and 16 variables:
+A data frame with 1,937,902 rows and 10 variables:
 \describe{
-  \item{plant_name_id}{World Checklist of Vascular Plants (WCVP) identifier}
-  \item{continent_code_l1}{WGSRPD Level 1 code.}
-  \item{continent}{WGSRPD Level 1 name.}
-  \item{region_code_l2}{WGSRPD Level 2 code.}
-  \item{region}{WGSRPD Level 2 name}
-  \item{area_code_l3}{WGSRPD Level 3 code}
-  \item{area}{WGSRPD name}
-  \item{introduced}{0 if native; 1 if introduced}
-  \item{extinct}{1 if extinct; 0 if extant}
-  \item{location_doubtful}{1 if doubtful; 0 otherwise}
-  \item{family}{The name of the family to which the taxon belongs. (The
-  highest rank at which names are presented in WCVP).}
-  \item{genus}{The name of the genus to which the record refers.}
-  \item{taxon_name}{Concatenation of genus with species and, where
-  applicable, infraspecific epithets to make a binomial or trinomial name.}
-  \item{taxon_status}{Indication of taxonomic opinion re the name.}
-  \item{taxon_rank}{The level in the taxonomic hierarchy where the taxon
-  name fits. Some infraspecific names are unranked and will have no value
-  in this column.}
-  \item{taxon_authors}{Concatenation of parenthetical and primary authors.
-  Missing values indicate instances where authorship is unknown or
-  non-applicable (e.g. autonyms). }
+\item{plant_name_id}{World Checklist of Vascular Plants (WCVP) identifier}
+\item{continent_code_l1}{WGSRPD Level 1 code.}
+\item{continent}{WGSRPD Level 1 name.}
+\item{region_code_l2}{WGSRPD Level 2 code.}
+\item{region}{WGSRPD Level 2 name}
+\item{area_code_l3}{WGSRPD Level 3 code}
+\item{area}{WGSRPD name}
+\item{introduced}{0 if native; 1 if introduced}
+\item{extinct}{1 if extinct; 0 if extant}
+\item{location_doubtful}{1 if doubtful; 0 otherwise}
 
 }
 }

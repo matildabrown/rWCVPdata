@@ -9,10 +9,13 @@ Description: This is the data package for the World Checklist of Vascular
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
-LazyDataCompression:xz
-RoxygenNote: 7.1.2
+LazyDataCompression: xz
+RoxygenNote: 7.2.0
 Imports: 
     glue,
     httr,
     rvest,
     stringr
+Depends: 
+    R (>= 2.10)
+Roxygen: list(markdown = TRUE)
