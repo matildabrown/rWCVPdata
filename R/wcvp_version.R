@@ -8,19 +8,18 @@
 #'
 #' @examples check_wcvp_version()
 #'
-check_wcvp_version <- function(silent=FALSE, test=FALSE){
-  if(test==TRUE){
-    packageversionurl <- "http://sftp.kew.org/pub/data-repositories/WCVP/wcvp_v6_sep_2021.zip"
-  } else {
-  packageversionurl <- "http://sftp.kew.org/pub/data-repositories/WCVP/wcvp_v7_dec_2021.zip"
-  }
-  recentversionurl <- wcvp_download_url_()
+check_wcvp_version <- function(silent=FALSE){
+
+  #this is the name it will have when archived
+  packageversion <- "wcvp_v10_oct_2022.zip"
+
+  archivedversions <- wcvp_archive_versions_()
   if(silent==FALSE){
-  if(packageversionurl==recentversionurl) {
-    message("WCVP data up to date - using the most recent release (December 2021; v7)")
+  if(!packageversion %in% archivedversions) {
+    message("WCVP data up to date - using the most recent release (October 2022; v10)")
   } else {
     message(paste0("WCVP data not the most recent version - package dataset
-                   downloaded from ",packageversionurl, " but most recent version available from ", recentversionurl ))
+                   matches ",packageversion, " but most recent version available from http://sftp.kew.org/pub/data-repositories/WCVP/wcvp.zip" ))
   }
   } else {
     return(packageversionurl==recentversionurl)
@@ -63,4 +62,41 @@ wcvp_download_url_ <- function(version=NULL) {
 
   download_link <- download_links[str_detect(download_links, paste0("_v", version))]
   paste0(base, download_link)
+}
+
+
+#' Get the archived version links of WCVP.
+#'
+#' @importFrom httr GET
+#' @importFrom rvest html_nodes html_attr
+#' @importFrom stringr str_detect
+#'
+#' @noRd
+wcvp_archive_versions_ <- function() {
+
+  # from archive
+  base <- "http://sftp.kew.org/pub/data-repositories/WCVP/Archive/wcvp_webapp_oct_2019_to_jun_2022/"
+  response <- GET(base)
+
+  page <- httr::content(response)
+  link_nodes <- html_nodes(page, "a")
+  links <- html_attr(link_nodes, "href")
+
+  download_links1 <- links[str_detect(links, "\\.zip$")]
+
+
+  # from webapp archive
+
+  base <- "http://sftp.kew.org/pub/data-repositories/WCVP/Archive/wcvp_webapp_oct_2019_to_jun_2022/"
+  response <- GET(base)
+
+  page <- httr::content(response)
+  link_nodes <- html_nodes(page, "a")
+  links <- html_attr(link_nodes, "href")
+
+  download_links2 <- links[str_detect(links, "\\.zip$")]
+
+return(c(download_links1, download_links2))
+
+
 }
