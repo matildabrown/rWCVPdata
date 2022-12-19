@@ -22,7 +22,7 @@ check_wcvp_version <- function(silent=FALSE){
                    matches ",packageversion, " but most recent version available from http://sftp.kew.org/pub/data-repositories/WCVP/wcvp.zip" ))
   }
   } else {
-    return(packageversionurl==recentversionurl)
+    return(!packageversion %in% archivedversions)
   }
 
 }
