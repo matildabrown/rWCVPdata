@@ -2,7 +2,7 @@
 #'
 #' A dataset containing the taxonomic data from the WCVP.
 #'
-#' @format A data frame with 1,395,428 rows and 27 variables:
+#' @format A data frame with 1,415,007 rows and 31 variables:
 #' \describe{
 #'   \item{plant_name_id}{World Checklist of Vascular Plants (WCVP) identifier}
 #'   \item{ipni_id}{International Plant Name Index (IPNI) identifier. Missing
@@ -71,14 +71,23 @@
 #'   moss, alga or animal).}
 #'   \item{basionym_plant_name_id}{ID of the original name that taxon_name was
 #'   derived from (i.e. the basionym). Empty if there have been no name changes.}
+#'   \item{replaced_synonym_author}{The author or authors responsible for
+#'   publication of the replaced synonym. Empty when the name is not a
+#'   replacement name based on another name.}
 #'   \item{homotypic_synonym}{The synonym type - TRUE if homotypic synonym,
 #'   otherwise NA.}
 #'   \item{parent_plant_name_id}{ID for the parent genus or parent species of an
 #'   accepted species or infraspecific name. Empty for non accepted names or
 #'   where the parent has not yet been calculated.}
+#'   \item{powo_id}{Identifier required to look up the name directly in Plants
+#'   of the World Online (POWO).}
+#'   \item{hybrid_formula}{Parents of hybrid.}
+#'   \item{reviewed}{Flag indicating whether the family to which the taxon
+#'   belongs has been peer reviewed.}
+#'
 #'   ...
 #' }
-#' @source \url{http://sftp.kew.org/pub/data-repositories/WCVP/}
+#' @source \url{http://sftp.kew.org/pub/data-repositories/WCVP/wcvp.zip}
 
 "wcvp_names"
 
@@ -88,8 +97,9 @@
 #' Biodiversity Information Standards (TDWG) World Geographical Scheme for
 #' Recording Plant Distributions (WGSRPD)
 #'
-#' @format A data frame with 1,937,902 rows and 10 variables:
+#' @format A data frame with 1,950,339 rows and 11 variables:
 #' \describe{
+#'   \item{plant_locality_id){Sequential number.}
 #'   \item{plant_name_id}{World Checklist of Vascular Plants (WCVP) identifier}
 #'   \item{continent_code_l1}{WGSRPD Level 1 code.}
 #'   \item{continent}{WGSRPD Level 1 name.}
@@ -102,7 +112,7 @@
 #'   \item{location_doubtful}{1 if doubtful; 0 otherwise}
 #'
 #' }
-#' @source \url{http://sftp.kew.org/pub/data-repositories/WCVP/}
+#' @source \url{http://sftp.kew.org/pub/data-repositories/WCVP/wcvp.zip}
 
 "wcvp_distributions"
 
