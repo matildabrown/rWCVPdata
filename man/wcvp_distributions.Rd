@@ -5,8 +5,9 @@
 \alias{wcvp_distributions}
 \title{The World Checklist of Vascular Plants: distributions}
 \format{
-A data frame with 1,937,902 rows and 10 variables:
+A data frame with 1,950,339 rows and 11 variables:
 \describe{
+\item{plant_locality_id){Sequential number.}
 \item{plant_name_id}{World Checklist of Vascular Plants (WCVP) identifier}
 \item{continent_code_l1}{WGSRPD Level 1 code.}
 \item{continent}{WGSRPD Level 1 name.}
@@ -21,7 +22,7 @@ A data frame with 1,937,902 rows and 10 variables:
 }
 }
 \source{
-\url{http://sftp.kew.org/pub/data-repositories/WCVP/}
+\url{http://sftp.kew.org/pub/data-repositories/WCVP/wcvp.zip}
 }
 \usage{
 wcvp_distributions
