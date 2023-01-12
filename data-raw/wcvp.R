@@ -34,7 +34,6 @@ version <- str_extract(version, "\\d+")
 
 citation <- read_xlsx("wcvp-files/README_WCVP.xlsx", range="A4", col_names="cite")$cite
 cite_date <- str_extract(citation, "(?<=accessed )\\d+ [A-Z][a-z]+ \\d{4}")
-cite_date <- as_date(cite_date, format="%d %m %Y")
 
 table_info <- read_xlsx("wcvp-files/README_WCVP.xlsx", range="A11", col_names="info")$info
 table_rows <- str_extract(table_info, "[\\d\\,]+(?= rows)")
@@ -55,7 +54,7 @@ upload_date <- str_extract(wcvp_line, "\\d{4}-\\d{2}-\\d{2}")
 # save to internal data file
 metadata <- list(
   version=as.numeric(version),
-  version_date=glue("{month(cite_date, label=T, abbr=T)} {year(cite_date)}"),
+  version_date=cite_date,
   name_rows=as.numeric(str_remove_all(table_rows, "\\,")),
   name_col=as.numeric(table_cols),
   upload_date=upload_date,
@@ -63,6 +62,16 @@ metadata <- list(
 )
 
 usethis::use_data(metadata, internal=TRUE, overwrite=TRUE)
+
+# update citation file ----
+citation_file <- "inst/CITATION"
+
+citation_text <- readLines(citation_file)
+updated_text <- str_replace(citation_text, "(?<=snapshot_date \\<\\- )NULL",
+                            paste0("'", cite_date, "'"))
+updated_text <- str_replace(updated_text, "(?<=snapshot_version \\<\\- )NULL",
+                            version)
+writeLines(updated_text, citation_file)
 
 # clean up directory ----
 unlink(temp)

@@ -1,0 +1,38 @@
+citHeader("rWCVPdata redistributes snapshots of the WCVP database. We, therefore, encourage you to cite the snapshot version and the WCVP data paper:")
+
+### EDITED BY `data-raw/wcvp.R` DO NOT TOUCH
+snapshot_version <- 10
+snapshot_date <- '27 October 2022'
+snapshot_year <- strsplit(snapshot_date, split=" ")[[1]][3]
+###
+
+citEntry(
+  entry = "Manual",
+  title = "WCVP: World Checklist of Vascular Plants. Facilitated by the Royal Botanic Gardens, Kew.",
+  editor = as.person('Rafa\"{e}l Govaerts'),
+  year=snapshot_year,
+  note=paste0("version ", snapshot_version, ", accessed ", snapshot_date),
+  doi="https://doi.org/10.34885/nswv-8994",
+  textVersion =
+  paste0("Govaerts R (ed.). ", snapshot_year,". WCVP: World Checklist of Vascular Plants. Facilitated by the Royal Botanic Gardens, Kew. https://doi.org/10.34885/nswv-8994 [v", snapshot_version,
+  " accessed ", snapshot_date, "].")
+)
+
+citEntry(
+  entry    = "Article",
+  title    = "The World Checklist of Vascular Plants, a continuously updated resource for exploring global plant diversity",
+  author   = personList(
+    as.person('Rafa\"{e}l Govaerts'),
+    as.person("Eimear Nic Lughadha"),
+    as.person("Nicholas Black"),
+    as.person("Robert Turner"),
+    as.person("Alan Paton")
+  ),
+  journal  = "Scientific Data",
+  year     = "2021",
+  volume   = "8",
+  number   = "215",
+  url      = "https://doi.org/10.1038/s41597-021-00997-6",
+  textVersion = paste("Govaerts, R., Nic Lughadha, E. et al. The World Checklist of Vascular Plants, a continuously updated resource for exploring global plant diversity. Sci Data 8, 215 (2021). https://doi.org/10.1038/s41597-021-00997-6")
+)
+
