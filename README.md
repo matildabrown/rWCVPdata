@@ -2,7 +2,7 @@
 # rWCVPdata
 
 <!-- badges: start -->
-[![R-CMD-check](https://github.com/matildabrown/rWCVPdata/workflows/R-CMD-check/badge.svg)](https://github.com/matildabrown/rWCVPdata/actions)
+[![R-CMD-check](https://github.com/matildabrown/rWCVPdata/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/matildabrown/rWCVPdata/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 rWCVPdata is a data package that redistributes snapshots of the World Checklist of Vascular Plants (WCVP) database so it is easier to load into R.
