@@ -1,7 +1,7 @@
 Package: rWCVPdata
 Type: Package
 Title: Data from the World Checklist of Vascular Plants
-Version: 0.3.0
+Version: 0.3.1
 Authors@R: c(person("Matilda","Brown",,"m.brown2@kew.org",role=c("aut","cre")),
              person("Barnaby","Walker",,"b.walker@kew.org",role=c("aut")))
 Maintainer: Matilda Brown <m.brown2@kew.org>
