@@ -14,10 +14,10 @@
 #'   \item{family}{The name of the family to which the taxon belongs. (The
 #'   highest rank at which names are presented in WCVP).}
 #'   \item{genus_hybrid}{Indication of hybrid status at genus level:
-#'   + indicates a graft-chimaera and × indicates a hybrid.}
+#'   \+ indicates a graft-chimaera and × indicates a hybrid.}
 #'   \item{genus}{The name of the genus to which the record refers.}
 #'   \item{species_hybrid}{Indication of hybrid status at species level:
-#'   + indicates a graft-chimaera and × indicates a hybrid.}
+#'   \+ indicates a graft-chimaera and × indicates a hybrid.}
 #'   \item{species}{The species epithet which is combined with the genus name
 #'   to make a binomial name for a species. Empty when the taxon name is at the
 #'   rank of genus.}
@@ -99,7 +99,7 @@
 #'
 #' @format A data frame with 1,950,339 rows and 11 variables:
 #' \describe{
-#'   \item{plant_locality_id){Sequential number.}
+#'   \item{plant_locality_id}{Sequential number.}
 #'   \item{plant_name_id}{World Checklist of Vascular Plants (WCVP) identifier}
 #'   \item{continent_code_l1}{WGSRPD Level 1 code.}
 #'   \item{continent}{WGSRPD Level 1 name.}
@@ -110,7 +110,6 @@
 #'   \item{introduced}{0 if native; 1 if introduced}
 #'   \item{extinct}{1 if extinct; 0 if extant}
 #'   \item{location_doubtful}{1 if doubtful; 0 otherwise}
-#'
 #' }
 #' @source \url{http://sftp.kew.org/pub/data-repositories/WCVP/wcvp.zip}
 
@@ -159,7 +158,7 @@
 #'   \item{LEVEL1_COD}{Level 1 code (continent)}
 #'   \item{geometry}{sf geometry}
 #'   \item{fillcol}{Used for mapping.}
-#'   }
+#' }
 #'
 #' @source  \url{https://github.com/tdwg/wgsrpd/tree/master/level3}
 

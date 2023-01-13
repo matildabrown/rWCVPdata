@@ -7,7 +7,7 @@
 \format{
 A data frame with 1,950,339 rows and 11 variables:
 \describe{
-\item{plant_locality_id){Sequential number.}
+\item{plant_locality_id}{Sequential number.}
 \item{plant_name_id}{World Checklist of Vascular Plants (WCVP) identifier}
 \item{continent_code_l1}{WGSRPD Level 1 code.}
 \item{continent}{WGSRPD Level 1 name.}
@@ -18,7 +18,6 @@ A data frame with 1,950,339 rows and 11 variables:
 \item{introduced}{0 if native; 1 if introduced}
 \item{extinct}{1 if extinct; 0 if extant}
 \item{location_doubtful}{1 if doubtful; 0 otherwise}
-
 }
 }
 \source{

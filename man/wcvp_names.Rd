@@ -17,11 +17,10 @@ iin this column.}
 \item{family}{The name of the family to which the taxon belongs. (The
 highest rank at which names are presented in WCVP).}
 \item{genus_hybrid}{Indication of hybrid status at genus level:
-\itemize{
-\item indicates a graft-chimaera and × indicates a hybrid.}
+\+ indicates a graft-chimaera and × indicates a hybrid.}
 \item{genus}{The name of the genus to which the record refers.}
 \item{species_hybrid}{Indication of hybrid status at species level:
-\item indicates a graft-chimaera and × indicates a hybrid.}
+\+ indicates a graft-chimaera and × indicates a hybrid.}
 \item{species}{The species epithet which is combined with the genus name
 to make a binomial name for a species. Empty when the taxon name is at the
 rank of genus.}
@@ -49,9 +48,7 @@ instances where publication details are unknown or non-applicable (e.g.
 for autonyms). }
 \item{volume_and_page}{The volume and page numbers of the original
 publication of the taxon name, where "5(6): 36" is volume 5, issue 6, page
-}
-\enumerate{
-\item Missing values indicate instances where publication details are unknown
+36. Missing values indicate instances where publication details are unknown
 or non-applicable (e.g. for autonyms). }
 \item{first_published}{The year of publication of the taxon name, enclosed
 in parentheses. Missing values indicate instances where publication details
@@ -90,7 +87,6 @@ of the World Online (POWO).}
 \item{hybrid_formula}{Parents of hybrid.}
 \item{reviewed}{Flag indicating whether the family to which the taxon
 belongs has been peer reviewed.}
-}
 
 ...
 }
