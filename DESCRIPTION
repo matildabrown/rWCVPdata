@@ -22,5 +22,6 @@ Depends:
 Roxygen: list(markdown = TRUE)
 Suggests: 
     testthat (>= 3.0.0)
+Additional_repositories: https://cloud.r-project.org
 Config/testthat/edition: 3
 URL: https://matildabrown.github.io/rWCVPdata/
