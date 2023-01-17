@@ -9,7 +9,22 @@ rWCVPdata is a data package that redistributes snapshots of the World Checklist 
 
 ## Installation
 
-You can install the development version of rWCVPdata from [GitHub](https://github.com/) with:
+rWCVPdata is not hosted on CRAN, but you can install it using:
+
+```r
+install.packages("rWCVPdata", repos=c("https://matildabrown.github.io/drat", "https://cloud.r-project.org"))
+```
+
+Or you can add our data repository to your repo list first:
+```r
+r <- getOption("repos")
+r["matildabrown"] <- "https://matildabrown.github.io/drat"
+options(repos=r)
+
+install.packages("rWCVPdata")
+```
+
+You can install the latest development version of rWCVPdata from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
