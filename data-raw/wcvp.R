@@ -14,6 +14,9 @@ library(glue)
 base_url <- "http://sftp.kew.org/pub/data-repositories/WCVP/"
 zip_url <- paste0(base_url, "wcvp.zip")
 
+# if site down, use emergency script to update (not part of package)
+# or wait until site is back up
+
 # download to temporary place and extract
 temp <- tempfile()
 download.file(zip_url, temp)
