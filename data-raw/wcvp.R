@@ -70,11 +70,14 @@ usethis::use_data(metadata, internal=TRUE, overwrite=TRUE)
 citation_file <- "inst/CITATION"
 
 citation_text <- readLines(citation_file)
-updated_text <- str_replace(citation_text, "(?<=snapshot_date \\<\\- )NULL",
-                            paste0("'", cite_date, "'"))
-updated_text <- str_replace(updated_text, "(?<=snapshot_version \\<\\- )NULL",
-                            version)
-writeLines(updated_text, citation_file)
+
+i <- which(str_detect(citation_text, "(?=snapshot_date \\<\\- )"))
+citation_text[i] <- paste0("snapshot_date <- '",cite_date, "'")
+
+i <- which(str_detect(citation_text, "(?<=snapshot_version \\<\\- )"))
+citation_text[i] <- paste0("snapshot_date <- ", version)
+
+writeLines(citation_text, citation_file)
 
 # clean up directory ----
 unlink(temp)
