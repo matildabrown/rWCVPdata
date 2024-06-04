@@ -1,8 +1,8 @@
 citHeader("rWCVPdata redistributes snapshots of the WCVP database. We, therefore, encourage you to cite the snapshot version and the WCVP data paper:")
 
 ### EDITED BY `data-raw/wcvp.R` DO NOT TOUCH
-snapshot_version <- 10
-snapshot_date <- '27 October 2022'
+snapshot_date <- '21 May 2024'
+snapshot_date <- '21 May 2024'
 snapshot_year <- strsplit(snapshot_date, split=" ")[[1]][3]
 ###
 
