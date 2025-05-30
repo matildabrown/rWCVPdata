@@ -1,39 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://matildabrown.github.io/rWCVPdata/404.html</loc>
-  </url>
-  <url>
-    <loc>https://matildabrown.github.io/rWCVPdata/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://matildabrown.github.io/rWCVPdata/index.html</loc>
-  </url>
-  <url>
-    <loc>https://matildabrown.github.io/rWCVPdata/reference/coast.html</loc>
-  </url>
-  <url>
-    <loc>https://matildabrown.github.io/rWCVPdata/reference/coast_pacific.html</loc>
-  </url>
-  <url>
-    <loc>https://matildabrown.github.io/rWCVPdata/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://matildabrown.github.io/rWCVPdata/reference/wcvp_check_version.html</loc>
-  </url>
-  <url>
-    <loc>https://matildabrown.github.io/rWCVPdata/reference/wcvp_distributions.html</loc>
-  </url>
-  <url>
-    <loc>https://matildabrown.github.io/rWCVPdata/reference/wcvp_names.html</loc>
-  </url>
-  <url>
-    <loc>https://matildabrown.github.io/rWCVPdata/reference/wcvp_version.html</loc>
-  </url>
-  <url>
-    <loc>https://matildabrown.github.io/rWCVPdata/reference/wgsrpd3.html</loc>
-  </url>
-  <url>
-    <loc>https://matildabrown.github.io/rWCVPdata/reference/wgsrpd3_pacific.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://matildabrown.github.io/rWCVPdata/404.html</loc></url>
+<url><loc>https://matildabrown.github.io/rWCVPdata/authors.html</loc></url>
+<url><loc>https://matildabrown.github.io/rWCVPdata/index.html</loc></url>
+<url><loc>https://matildabrown.github.io/rWCVPdata/reference/coast.html</loc></url>
+<url><loc>https://matildabrown.github.io/rWCVPdata/reference/coast_pacific.html</loc></url>
+<url><loc>https://matildabrown.github.io/rWCVPdata/reference/index.html</loc></url>
+<url><loc>https://matildabrown.github.io/rWCVPdata/reference/wcvp_check_version.html</loc></url>
+<url><loc>https://matildabrown.github.io/rWCVPdata/reference/wcvp_distributions.html</loc></url>
+<url><loc>https://matildabrown.github.io/rWCVPdata/reference/wcvp_names.html</loc></url>
+<url><loc>https://matildabrown.github.io/rWCVPdata/reference/wcvp_version.html</loc></url>
+<url><loc>https://matildabrown.github.io/rWCVPdata/reference/wgsrpd3.html</loc></url>
+<url><loc>https://matildabrown.github.io/rWCVPdata/reference/wgsrpd3_pacific.html</loc></url>
 </urlset>
+
