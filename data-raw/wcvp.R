@@ -32,13 +32,13 @@ usethis::use_data(wcvp_distributions, compress="xz", overwrite=TRUE)
 
 # extract metadata ----
 # get info from README spreadsheet
-version <- read_xlsx("wcvp-files/README_WCVP.xlsx", range="A7", col_names="version")$version
+version <- read_xlsx("wcvp-files/README_WCVP.xlsx", range="A9", col_names="version")$version
 version <- str_extract(version, "\\d+")
 
 citation <- read_xlsx("wcvp-files/README_WCVP.xlsx", range="A4", col_names="cite")$cite
 cite_date <- str_extract(citation, "(?<=accessed )\\d+ [A-Z][a-z]+ \\d{4}")
 
-table_info <- read_xlsx("wcvp-files/README_WCVP.xlsx", range="A11", col_names="info")$info
+table_info <- read_xlsx("wcvp-files/README_WCVP.xlsx", range="A13", col_names="info")$info
 table_rows <- str_extract(table_info, "[\\d\\,]+(?= rows)")
 table_cols <- str_extract(table_info, "[\\d\\,]+(?= columns)")
 
