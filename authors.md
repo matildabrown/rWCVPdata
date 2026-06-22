@@ -10,13 +10,13 @@
 
 Govaerts R (ed.). 2026. WCVP: World Checklist of Vascular Plants.
 Facilitated by the Royal Botanic Gardens, Kew.
-https://doi.org/10.34885/nswv-8994 \[v15 accessed 06 Jan 2026\].
+https://doi.org/10.34885/nswv-8994 \[v16 accessed 04 Jun 2026\].
 
     @Manual{,
       title = {WCVP: World Checklist of Vascular Plants. Facilitated by the Royal Botanic Gardens, Kew.},
       editor = {Rafa"{e}l Govaerts},
       year = {2026},
-      note = {version 15, accessed 06 Jan 2026},
+      note = {version 16, accessed 04 Jun 2026},
       doi = {https://doi.org/10.34885/nswv-8994},
     }
 

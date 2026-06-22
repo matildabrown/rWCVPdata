@@ -9,12 +9,14 @@ into R.
 rWCVPdata is not hosted on CRAN, but you can install it using:
 
 ``` r
+
 install.packages("rWCVPdata", repos=c("https://matildabrown.github.io/drat", "https://cloud.r-project.org"))
 ```
 
 Or you can add our data repository to your repo list first:
 
 ``` r
+
 r <- getOption("repos")
 r["matildabrown"] <- "https://matildabrown.github.io/drat"
 options(repos=r)
@@ -26,6 +28,7 @@ You can install the latest development version of rWCVPdata from
 [GitHub](https://github.com/) with:
 
 ``` r
+
 # install.packages("devtools")
 devtools::install_github("matildabrown/rWCVPdata")
 ```
@@ -38,6 +41,7 @@ and the paper describing WCVP.
 You can find out how to cite these by running:
 
 ``` r
+
 citation("rWCVPdata")
 ```
 

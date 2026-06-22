@@ -19,5 +19,5 @@ wcvp_version(long = TRUE)
 
 ``` r
 wcvp_version()
-#> Version 15 (06 Jan 2026)
+#> Version 16 (04 Jun 2026)
 ```
